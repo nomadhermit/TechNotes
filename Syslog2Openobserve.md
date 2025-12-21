@@ -5,7 +5,7 @@ OpenObserve deprecated their native Syslog listener.  As such devices sending sy
 Minimize changes to existing systems sending syslog messages such as devices with /etc/rsyslog.conf setup with 
 ```
 ## syslog server
-*.* @<syslog server>:5514
+*.* @<OpenObserve server>:5514
 ```
 in this case, port 5514 was the defaulr syslog listerner port in prior versions of OpenObserve before being deprecated
 
