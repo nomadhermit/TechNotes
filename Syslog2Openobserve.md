@@ -10,8 +10,8 @@ Minimize changes to existing systems sending syslog messages such as devices wit
 in this case, port 5514 was the defaulr syslog listerner port in prior versions of OpenObserve before being deprecated
 
 ## Solution
-1. Installed Fluent-Bit on same server as OpenObserve
-2. Configured /etc/fluent-bit/fluent-bit.conf with the following input and output to proxy syslog message using old syslog listener port to OpenObserve http api listener:
+1. Installed FluentBit on same server as OpenObserve and setup syslog listener on same port as before since OpenObserve no longer used that port. 
+2. Configured /etc/fluent-bit/fluent-bit.conf with the following INPUT and OUTPUT sections to proxy incoming remote syslog messages to OpenObserve:
 ```
 [INPUT]
     Name        syslog
@@ -34,15 +34,15 @@ in this case, port 5514 was the defaulr syslog listerner port in prior versions 
     HTTP_Passwd <password> 
     compress gzip
 ```
-3. restart Fluent-bit
-4. confirm messages appear in OpenObserve
+3. restart Fluentbit
+4. confirm syslog messages from configured devices appear in OpenObserve Logs section.
 
 ## Notes:
-OpenObserver recommended Fluent-bit setup is to use "Json_date_key" equal to "_Timestamp"  but during testing, 
+OpenObserver recommended Fluentbit setup is to use "Json_date_key" equal to "_timestamp"  but during testing, 
 issues with proxied messages being to old to process showed up in Fluentbit logs so changed to value "time"
 and proxied messages went through successfully and had corret timestamp in OpenObserve
 
 During initial troubleshooting used logger to test communication and proxy using following syntax:
 ```
-logger -p 0 -d -n <Fluent-Bit host> -P 5514 "This is only test message -- #1 --- remote"
+logger -p 0 -d -n <FluentBit host> -P 5514 "This is only test message -- #1 --- remote"
 ```
