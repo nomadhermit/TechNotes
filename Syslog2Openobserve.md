@@ -1,5 +1,5 @@
 ## Background
-OpenObserve deprecated their native Syslog listener.  As such devices sending syslog messages no longer were able to send data.
+OpenObserve deprecated their native Syslog listener.  As such, devices configured to send syslog messages no longer were able to send data to OpenObserve instance as of August 2025 release.
 
 ## Goal
 Minimize changes to existing systems sending syslog messages such as devices with /etc/rsyslog.conf setup with 
@@ -7,7 +7,7 @@ Minimize changes to existing systems sending syslog messages such as devices wit
 ## syslog server
 *.* @<OpenObserve server>:5514
 ```
-in this case, port 5514 was the defaulr syslog listerner port in prior versions of OpenObserve before being deprecated
+port 5514 was the default syslog listener port in prior versions of OpenObserve before being deprecated
 
 ## Solution
 1. Installed FluentBit on same server as OpenObserve and setup syslog listener on same port as before since OpenObserve no longer used that port. 
