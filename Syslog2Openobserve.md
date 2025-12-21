@@ -40,7 +40,7 @@ in this case, port 5514 was the defaulr syslog listerner port in prior versions 
 ## Notes:
 OpenObserver recommended Fluentbit setup is to use "Json_date_key" equal to "_timestamp"  but during testing, 
 issues with proxied messages being to old to process by OpenObserve showed up in Fluentbit logs so changed to value "time"
-and proxied messages went through successfully and had corret timestamp in OpenObserve
+and proxied messages went through successfully and had correct timestamp in OpenObserve.
 
 During initial troubleshooting used logger to test communication and proxy using following syntax:
 ```
