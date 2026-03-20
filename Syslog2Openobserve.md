@@ -35,7 +35,11 @@ port 5514 was the default syslog listener port in prior versions of OpenObserve 
     compress gzip
 ```
 3. restart Fluentbit
-4. confirm syslog messages from configured devices appear in OpenObserve Logs section.
+5. confirm syslog messages from configured devices appear in OpenObserve Logs section.
+6. reboot system to confirm all starts up automatically, if FluentBit not running make sure service is enabled
+```
+sudo systemctl enable fluent-bit
+```
 
 ## Notes:
 OpenObserver recommended Fluentbit setup is to use "Json_date_key" equal to "_timestamp"  but during testing, 
