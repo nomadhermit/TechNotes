@@ -6,5 +6,5 @@
 - https://github.com/jdx/mise
 - https://github.com/gtsteffaniak/filebrowser
 - https://github.com/sxyazi/yazi
-
+- https://github.com/rclone/rclone
 - 
