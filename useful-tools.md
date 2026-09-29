@@ -5,4 +5,6 @@
 - https://github.com/atuinsh/atuin
 - https://github.com/jdx/mise
 - https://github.com/gtsteffaniak/filebrowser
+- https://github.com/sxyazi/yazi
+
 - 
