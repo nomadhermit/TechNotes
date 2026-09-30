@@ -7,4 +7,6 @@
 - https://github.com/gtsteffaniak/filebrowser
 - https://github.com/sxyazi/yazi
 - https://github.com/rclone/rclone
+- https://github.com/dcarrero/mboxshell
+
 - 
