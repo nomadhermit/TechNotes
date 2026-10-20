@@ -8,5 +8,5 @@
 - https://github.com/sxyazi/yazi
 - https://github.com/rclone/rclone
 - https://github.com/dcarrero/mboxshell
-
+- https://github.com/termix-ssh/termix
 - 
