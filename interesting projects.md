@@ -15,3 +15,9 @@ Productivity:
 Operating Systems:
 - https://github.com/omacom/try-omarchy
 - https://github.com/omacom/omarchy
+
+IPTV:
+- https://github.com/ardoviniandrea/ViniPlay
+- https://github.com/MikaelKW/nodecast-tv-plus
+  
+
