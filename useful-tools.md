@@ -10,5 +10,4 @@
 - https://github.com/dcarrero/mboxshell
 - https://github.com/termix-ssh/termix
 - https://github.com/alexballas/go2tv
-- https://github.com/storytold
 - 
